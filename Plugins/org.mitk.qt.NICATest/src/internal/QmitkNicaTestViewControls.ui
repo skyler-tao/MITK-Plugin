@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QmitkNicaTestViewControls</class>
+ <widget class="QWidget" name="QmitkNicaTestViewControls">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>472</width>
+    <height>788</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>QmitkTemplate</string>
+  </property>
+  <widget class="QLabel" name="labelWarning">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>300</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel { color: rgb(255, 0, 0) }</string>
+   </property>
+   <property name="text">
+    <string>Please select an image!Using Ctrl + left click ^_^</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>431</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QGroupBox" name="interactiveTranslationsBox">
+      <property name="title">
+       <string>Interactive Translations</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>31</y>
+         <width>381</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QLabel" name="TranslationXLabel1">
+            <property name="text">
+             <string>x-direction (Frontal):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="TranslationXSlider">
+            <property name="minimum">
+             <number>-50</number>
+            </property>
+            <property name="maximum">
+             <number>50</number>
+            </property>
+            <property name="singleStep">
+             <number>1</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="TranslationXSpin">
+            <property name="minimum">
+             <number>-50</number>
+            </property>
+            <property name="maximum">
+             <number>50</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="TranslationXLabel2">
+            <property name="text">
+             <string>mm</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLabel" name="TranslationYLabel1">
+            <property name="text">
+             <string>y-direction (Sagittal):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="TranslationYSlider">
+            <property name="minimum">
+             <number>-50</number>
+            </property>
+            <property name="maximum">
+             <number>50</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="TranslationYSpin">
+            <property name="minimum">
+             <number>-50</number>
+            </property>
+            <property name="maximum">
+             <number>50</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="TranslationYLabel2">
+            <property name="text">
+             <string>mm</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QLabel" name="TranslationZLabel1">
+            <property name="text">
+             <string>z-direction (Axial):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="TranslationZSlider">
+            <property name="minimum">
+             <number>-50</number>
+            </property>
+            <property name="maximum">
+             <number>50</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="TranslationZSpin">
+            <property name="minimum">
+             <number>-50</number>
+            </property>
+            <property name="maximum">
+             <number>50</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="TranslationZLabel2">
+            <property name="text">
+             <string>mm</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="interactiveRotationsBox">
+      <property name="title">
+       <string>Interactive Rotations</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>31</y>
+         <width>381</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="QLabel" name="RotationXLabel1">
+            <property name="text">
+             <string>x-Axis (Frontal):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="RotationXSlider">
+            <property name="maximum">
+             <number>360</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="RotationXSpin">
+            <property name="maximum">
+             <number>360</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="RotationXLabel2">
+            <property name="text">
+             <string>°（度）</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <widget class="QLabel" name="RotationYLabel1">
+            <property name="text">
+             <string>y-Axis (Sagittal):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="RotationYSlider">
+            <property name="maximum">
+             <number>360</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="RotationYSpin">
+            <property name="maximum">
+             <number>360</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="RotationYLabel2">
+            <property name="text">
+             <string>°（度）</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <widget class="QLabel" name="RotationZLabel1">
+            <property name="text">
+             <string>z-Axis (Axial):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="RotationZSlider">
+            <property name="maximum">
+             <number>360</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="RotationZSpin">
+            <property name="maximum">
+             <number>360</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="RotationZLabel2">
+            <property name="text">
+             <string>°（度）</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="interactiveScalingBox">
+      <property name="title">
+       <string>Interactive Scaling</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget_6">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>31</y>
+         <width>381</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_15">
+          <item>
+           <widget class="QLabel" name="ScalingXLabel1">
+            <property name="text">
+             <string>x-direction (Frontal):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="ScalingXSlider">
+            <property name="minimum">
+             <number>-5</number>
+            </property>
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="pageStep">
+             <number>1</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="ScalingXSpin">
+            <property name="minimum">
+             <number>-5</number>
+            </property>
+            <property name="maximum">
+             <number>5</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="ScalingXLabel2">
+            <property name="text">
+             <string>倍数</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <item>
+           <widget class="QLabel" name="ScalingYLabel1">
+            <property name="text">
+             <string>y-direction (Sagittal):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="ScalingYSlider">
+            <property name="minimum">
+             <number>-5</number>
+            </property>
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="ScalingYSpin">
+            <property name="minimum">
+             <number>-5</number>
+            </property>
+            <property name="maximum">
+             <number>5</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="ScalingYLabel2">
+            <property name="text">
+             <string>倍数</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_17">
+          <item>
+           <widget class="QLabel" name="ScalingZLabel1">
+            <property name="text">
+             <string>z-direction (Axial):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="ScalingZSlider">
+            <property name="minimum">
+             <number>-5</number>
+            </property>
+            <property name="maximum">
+             <number>5</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="ScalingZSpin">
+            <property name="minimum">
+             <number>-5</number>
+            </property>
+            <property name="maximum">
+             <number>5</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="ScalingZlabel2">
+            <property name="text">
+             <string>倍数</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QLabel" name="label1">
+      <property name="text">
+       <string>Input Data:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="m_ImageSelectedLabel">
+      <property name="text">
+       <string>None Selected</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>RotationXSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>RotationXSpin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>270</x>
+     <y>364</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>347</x>
+     <y>360</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RotationXSpin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>RotationXSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>339</x>
+     <y>371</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>291</x>
+     <y>371</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RotationYSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>RotationYSpin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>303</x>
+     <y>399</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>335</x>
+     <y>399</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RotationYSpin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>RotationYSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>334</x>
+     <y>404</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>306</x>
+     <y>404</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RotationZSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>RotationZSpin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>303</x>
+     <y>437</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>340</x>
+     <y>438</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RotationZSpin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>RotationZSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>332</x>
+     <y>448</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ScalingXSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ScalingXSpin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>327</x>
+     <y>556</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>361</x>
+     <y>557</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ScalingXSpin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ScalingXSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>355</x>
+     <y>564</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>324</x>
+     <y>564</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ScalingYSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ScalingYSpin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>592</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>591</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ScalingYSpin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ScalingYSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>600</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>333</x>
+     <y>600</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ScalingZSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ScalingZSpin</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>322</x>
+     <y>633</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>633</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ScalingZSpin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ScalingZSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>641</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>321</x>
+     <y>641</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

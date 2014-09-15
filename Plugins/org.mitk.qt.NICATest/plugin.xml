@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+  
+  <extension point="org.blueberry.ui.views">
+    <view id="org.mitk.views.nicatest_view_name"
+          name="NICATest_view_name"
+          class="QmitkNicaTestView"
+          icon="resources/cube.png" />
+  </extension>
+
+</plugin>

@@ -1,0 +1,19 @@
+/**
+\bundlemainpage{org.mitk.qt.NICATest} NICATest
+
+\image html icon.xpm "Icon of NICATest"
+
+Available sections:
+  - \ref org.mitk.qt.NICATestOverview
+
+\section org.mitk.qt.NICATestOverview
+Describe the features of your awesome plugin here
+<ul>
+<li>Increases productivity
+<li>Creates beautiful images
+<li>Generates PhD thesis
+<li>Brings world peace
+</ul>
+
+*/
+
